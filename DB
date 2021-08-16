@@ -1,0 +1,80 @@
+BUSINESS_RULES
+
+ctry_cd(Varchar 3) - (AE,SG,IN,HK,ALL)
+channel_id((Varchar 5)- (WEB,MOB,ALL)
+rule_id((Varchar 10)- 100
+function(Varchar 10) - (CHATBOT,COP)
+rule(Varchar 20) - (GET_MOXTRA_TOKEN)
+description(Varchar 50) - (Get Moxtra access token for Chatbot functionality)
+status(Varchar 1) - (Y,N)
+segment_flag(Varchar 1) - (Y,N)
+group_flag(Varchar 1) - (Y,N)
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
+updateuser(Varchar 10) - (1382158)
+updatedate(Timestamp) -(28/07/2021 04:52:00 PM)
+
+MOXTRA_ORG_DETAILS
+
+ctry_cd(Varchar 3) - (AE,SG,IN,HK,ALL)
+function(Varchar 10) - (CHATBOT,COP)
+org_id(Varchar 20) - (10001)
+description(Varchar 50) - (Chatbot orgid in Moxtra)
+status(Varchar 1) - (Y,N)
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
+updateuser(Varchar 10) - (1382158)
+updatedate(Timestamp) -(28/07/2021 04:52:00 PM)
+
+OPERATING_HOURS
+
+ctry_cd(Varchar 3) - (AE,SG,IN,HK,ALL)
+channel_type(Varchar 10) - (CASH,TRADE)
+org_id(Varchar 20) - (10001)
+start_time(Time) - (09:00:00 AM)
+end_time(Time) - (06:00:00 PM)
+description(Varchar 50) - (Moxtra Org id and operating hours)
+status(Varchar 1) - (Y,N)
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
+updateuser(Varchar 10) - (1382158)
+updatedate(Timestamp) -(28/07/2021 04:52:00 PM)
+
+GROUP_TABLE
+
+
+rule_id(Varchar 10)- 100
+group_id(Varchar 10)- 10001
+status(Varchar 1) - (Y,N)
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
+updateuser(Varchar 10) - (1382158)
+updatedate(Timestamp) -(28/07/2021 04:52:00 PM)
+
+SEGMENT_TABLE
+
+
+rule_id(Varchar 10)- 100
+segment_id(Varchar 10)- 10001
+status(Varchar 1) - (Y,N)
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
+updateuser(Varchar 10) - (1382158)
+updatedate(Timestamp) -(28/07/2021 04:52:00 PM)
+
+AUDIT_LOG
+
+user_id(Varchar 10)- 100
+ctry_cd(Varchar 3) - (AE,SG,IN,HK,ALL)
+channel_id((Varchar 5)- (WEB,MOB,ALL)
+function(Varchar 10) - (CHATBOT,COP)
+group_id(Varchar 10)- 10001
+segment_id(Varchar 10)- 10001
+request(VARCHAR2 4000)
+response(VARCHAR2 4000)
+response_status(Varchar 10) - (SUCCESS,FAILED,ERROR)
+err_cd(Varchar 10) - (50001)
+execption(VARCHAR2 4000)
+
+createuser(Varchar 10) - (1382158)
+createdate(Timestamp) -(28/07/2021 04:52:00 PM)
